@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Manisha Portfolio</title>
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,14 +18,29 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
   <div class="container">
     <a class="navbar-brand fw-bold" href="#">Manisha</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <!-- HERO -->
-<section class="hero-section d-flex align-items-center text-center text-white" style="height:100vh; background:linear-gradient(45deg,#000,#444);">
+<section id="hero" class="hero-section text-white text-center">
   <div class="container">
-    <h1 class="display-4">Hi, I'm Manisha 👋</h1>
-    <p class="lead">Java Full Stack Developer | Building Scalable Web Apps</p>
+    <h1 class="hero-title">Hi, I'm Manisha 👋</h1>
+    <p class="hero-subtitle">Java Full Stack Developer | Spring Boot | MySQL</p>
 
     <a href="#projects" class="btn btn-primary m-2">View Projects</a>
     <a href="https://github.com/Manisha14-g" target="_blank" class="btn btn-outline-light m-2">GitHub</a>
@@ -32,39 +49,124 @@
 </section>
 
 <!-- ABOUT -->
-<section class="py-5">
+<section id="about" class="py-5">
   <div class="container">
     <h2 class="text-center mb-4">About Me</h2>
+
     <p class="text-center">
-      Aspiring Java Full Stack Developer with strong knowledge of Core Java, Spring Boot, JDBC, MySQL, HTML, CSS, and JavaScript. Passionate about building scalable web applications.
+      Aspiring Java Full Stack Developer with strong knowledge of Core Java, Spring Boot, Hibernate, JDBC, MySQL, HTML, CSS, and JavaScript, along with hands-on experience building full-stack web applications.
+    </p>
+
+    <p class="text-center">
+      Previously worked at Sify Technologies Ltd as a Network Administrative Level Associate (Apprentice), gaining exposure to ServiceNow, incident management, and IT service operations.
+    </p>
+
+    <p class="text-center">
+      Passionate about applying OOP concepts, REST APIs, and best coding practices to develop scalable and efficient applications while continuously learning and growing in the software development field.
     </p>
   </div>
 </section>
 
+<!-- EXPERIENCE -->
+<section id="experience" class="bg-light py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Experience</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Software Development Trainee</h5>
+            <h6 class="text-muted">Coding Cult (2024–2025)</h6>
+            <p>Worked on Spring Boot, REST APIs, and MySQL-based applications.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Java Full Stack Trainee</h5>
+            <h6 class="text-muted">Inspanner Academy (2023–2024)</h6>
+            <p>Learned Java, Spring Boot, HTML, CSS, JavaScript and built projects.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5>Network Admin Apprentice</h5>
+            <h6 class="text-muted">Sify Technologies (2023)</h6>
+            <p>Worked on ServiceNow, incident management, and IT operations.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- SKILLS -->
-<section class="bg-light py-5">
-  <div class="container text-center">
-    <h2>Skills</h2>
-    <p><b>Frontend:</b> HTML, CSS, JavaScript, Bootstrap</p>
-    <p><b>Backend:</b> Java, Spring Boot</p>
-    <p><b>Database:</b> MySQL, MongoDB</p>
-    <p><b>Tools:</b> Git, GitHub</p>
+<section id="skills" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5">Skills</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Frontend</h5>
+          <p>HTML, CSS, JavaScript, React JS, Bootstrap</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Backend</h5>
+          <p>Core Java, Advanced Java (Servlets, JDBC, JSP), Node JS</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Frameworks</h5>
+          <p>Spring, Spring Boot, Spring MVC</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Databases</h5>
+          <p>MySQL, MongoDB</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="card p-3">
+          <h5>Tools</h5>
+          <p>Eclipse, VS Code, MySQL Workbench, MongoDB Compass, Postman, Git</p>
+        </div>
+      </div>
+
+    </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="py-5">
+<section id="projects" class="bg-light py-5">
   <div class="container">
     <h2 class="text-center mb-5">Projects</h2>
 
-    <div class="row">
+    <div class="row g-4">
 
       <div class="col-md-6">
-        <div class="card p-3 shadow">
+        <div class="card p-3">
           <h5>Task Management System</h5>
           <p>
-            ✔ User Authentication<br>
-            ✔ CRUD Operations<br>
+            ✔ User Authentication <br>
+            ✔ CRUD Operations <br>
             ✔ Spring Boot + MySQL
           </p>
           <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
@@ -73,12 +175,12 @@
       </div>
 
       <div class="col-md-6">
-        <div class="card p-3 shadow">
+        <div class="card p-3">
           <h5>Online Food Ordering System</h5>
           <p>
-            ✔ Cart System<br>
-            ✔ Menu Management<br>
-            ✔ Backend with Java
+            ✔ Cart System <br>
+            ✔ Menu Management <br>
+            ✔ Java Backend
           </p>
           <a href="#" class="btn btn-primary btn-sm">Live Demo</a>
           <a href="https://github.com/Manisha14-g" class="btn btn-dark btn-sm">GitHub</a>
@@ -89,39 +191,26 @@
   </div>
 </section>
 
-<!-- EDUCATION -->
-<section class="bg-light py-5 text-center">
-  <div class="container">
-    <h2>Education</h2>
-    <p>BTech - Sreyas Institute of Engineering (2018–2022)</p>
-
-    <h3 class="mt-4">Experience</h3>
-    <p>Software Development Trainee - Coding Cult</p>
-  </div>
-</section>
-
-<!-- GITHUB -->
-<section class="py-5 text-center">
-  <div class="container">
-    <h2>GitHub</h2>
-    <p>Check out my projects:</p>
-    <a href="https://github.com/Manisha14-g" class="btn btn-dark">Visit GitHub</a>
-  </div>
-</section>
-
 <!-- CONTACT -->
-<section class="bg-dark text-white py-5 text-center">
+<section id="contact" class="contact-section text-center py-5">
   <div class="container">
     <h2>Contact</h2>
     <p>📞 +91 9346821293</p>
     <p>📧 manishagopala1235@gmail.com</p>
+
+    <a href="https://linkedin.com/in/manisha-g-492115286" target="_blank" class="btn btn-primary">
+      Connect on LinkedIn
+    </a>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="text-center py-3 bg-black text-white">
+<footer class="text-center">
   <p>© 2026 Manisha</p>
 </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
